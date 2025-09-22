@@ -1,0 +1,316 @@
+
+*** Running vivado
+    with args -log uart_echo_top.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source uart_echo_top.tcl
+
+
+
+****** Vivado v2024.2 (64-bit)
+  **** SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+  **** IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+  **** SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+  **** Start of session at: Mon Sep 22 18:14:40 2025
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source uart_echo_top.tcl -notrace
+Command: read_checkpoint -auto_incremental -incremental C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/utils_1/imports/synth_1/not_gate2.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/utils_1/imports/synth_1/not_gate2.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top uart_echo_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 8292
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1048.926 ; gain = 469.172
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'uart_echo_top' [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/sources_1/new/uart_echo_top.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_rx' [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/sources_1/new/uart_rx1.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart_rx' (0#1) [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/sources_1/new/uart_rx1.v:2]
+INFO: [Synth 8-6157] synthesizing module 'uart_tx' [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/sources_1/new/uart_tx1.v:2]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/sources_1/new/uart_tx1.v:30]
+INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/sources_1/new/uart_tx1.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'uart_echo_top' (0#1) [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/sources_1/new/uart_echo_top.v:2]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.281 ; gain = 575.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.281 ; gain = 575.527
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1155.281 ; gain = 575.527
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1155.281 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc]
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[0]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:17]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:17]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[0]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:18]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:18]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[1]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:20]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:20]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[1]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:21]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:21]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[2]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:23]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:23]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[2]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:24]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:24]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[3]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:26]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:26]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[3]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:27]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:27]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[4]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:29]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:29]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[4]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:30]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:30]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[5]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:32]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:32]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[5]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:33]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:33]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[6]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:35]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:35]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[6]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[7]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'rx_byte_leds[7]'. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/vini_dir/Keyword_Spotter/Keyword_Spotter.srcs/constrs_1/new/uart_echo.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/uart_echo_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/uart_echo_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1234.871 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1234.871 ; gain = 0.000
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1234.871 ; gain = 655.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1234.871 ; gain = 655.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1234.871 ; gain = 655.117
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'uart_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                RX_START |                               01 |                              001
+                 RX_DATA |                               10 |                              010
+                 RX_STOP |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                               00 |                              000
+                   START |                               01 |                              001
+                    DATA |                               10 |                              010
+                    STOP |                               11 |                              011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'uart_tx'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 1234.871 ; gain = 655.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   13 Bit       Adders := 1     
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    3 Bit       Adders := 2     
+	   2 Input    1 Bit       Adders := 1     
++---Registers : 
+	               13 Bit    Registers := 2     
+	                8 Bit    Registers := 3     
+	                3 Bit    Registers := 2     
+	                1 Bit    Registers := 10    
++---Muxes : 
+	   4 Input   13 Bit        Muxes := 2     
+	   4 Input    8 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 2     
+	   4 Input    3 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	   2 Input    1 Bit        Muxes := 5     
+	   4 Input    1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1234.871 ; gain = 655.117
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1353.773 ; gain = 774.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1383.715 ; gain = 803.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1383.715 ; gain = 803.961
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |     3|
+|3     |LUT1   |     1|
+|4     |LUT2   |     6|
+|5     |LUT3   |     5|
+|6     |LUT4   |    24|
+|7     |LUT5   |    14|
+|8     |LUT6   |    22|
+|9     |FDCE   |    64|
+|10    |FDPE   |     1|
+|11    |FDRE   |     2|
+|12    |IBUF   |     3|
+|13    |OBUF   |     2|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 1580.609 ; gain = 921.266
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1580.609 ; gain = 1000.855
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1583.094 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1586.137 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c5ca21e0
+INFO: [Common 17-83] Releasing license: Synthesis
+32 Infos, 17 Warnings, 16 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 1586.137 ; gain = 1210.773
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1586.137 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/vini_dir/Keyword_Spotter/Keyword_Spotter.runs/synth_1/uart_echo_top.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file uart_echo_top_utilization_synth.rpt -pb uart_echo_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Sep 22 18:15:09 2025...
