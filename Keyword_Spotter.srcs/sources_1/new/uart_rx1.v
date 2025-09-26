@@ -85,7 +85,7 @@ module uart_rx(
             Rx_Done <= 0;
         end else begin
             rx_done_d <= rx_done_int;
-            if(rx_done_int & ~rx_done_d) rx_done_latch <= 2'b11; // 2clk 유지
+            if(rx_done_int & ~rx_done_d) rx_done_latch <= 2 'b11; // 2clk 유지
             else if(rx_done_latch != 0) rx_done_latch <= rx_done_latch - 1'b1;
 
             Rx_Done <= |rx_done_latch;

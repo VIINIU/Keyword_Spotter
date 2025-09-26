@@ -1,4 +1,4 @@
-// uart_echo_top_debug.v
+// uart_echo_top.v
 module uart_echo_top(
     input clk,
     input rst_n,
@@ -31,10 +31,7 @@ module uart_echo_top(
         .Tx_Serial(txd),
         .Tx_Done(tx_done)
     );
-
     assign rx_led = rx_done;
-
-    // Echo FSM
     reg rx_done_d;
     always @(posedge clk or posedge rst) begin
         if(rst) begin
